@@ -12,6 +12,8 @@ export default Ember.Component.extend({
 
   labelProperty: null,
 
+  isDisabled: null,
+
   isSelected: function (_, checked) {
     if (arguments.length > 1) {
       var selected = this.get('selection').contains(this.get('value'));
